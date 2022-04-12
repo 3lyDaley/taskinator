@@ -8,7 +8,7 @@
   --tertiary: rgb(189, 200, 83);
   --grey: rgb(51, 51, 51);
   font-size: 62.5%;
-  --primaryFont: amagro;
+  --primaryFont: monospace, 'Courier new', courier;
   --secondaryFont: arial;
 }
 
@@ -26,13 +26,15 @@ body {
 }
 
 header {
-  background: var(--secondary);
   padding: 30px 25px;
-  border-bottom: 5px solid var(--primary);
+  width: 60%;
+  text-align: center;
+  align-self: center;
 }
 
 header p {
-  color: var(--tertiary);
+  text-align: center;
+  color: var(--secondary);
   margin: 5px 0 20px;
   font-size: 2rem;
 }
@@ -49,11 +51,12 @@ form {
 }
 
 form input {
+  font-family: var(--primaryFont);
   outline: none;
   border: none;
   padding: 12px;
-  width: 100%;
-  font-size: 2.2rem;
+  width: 33%;
+  font-size: 1.8rem;
   border: 2px solid var(--grey);
   border-radius: 12px;
 }
@@ -73,6 +76,7 @@ footer {
 }
 
 .page-title {
+  text-align: center;
   color: var(--primary);
   margin-bottom: 5px;
   margin-top: 0;
@@ -141,7 +145,8 @@ footer {
 }
 
 .btn {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: var(--primaryFont);
+  text-align: center;
   color:rgb(234, 211, 245);
   outline: none;
   border: none;
@@ -175,11 +180,11 @@ footer {
 
 .select-dropdown,
 .select-status {
-  display: block;
-  font-size: 2.2rem;
+  font-family: monospace, Courier;
+  font-size: 1.6rem;
   color: #444;
   padding: 12px;
-  width: 100%;
+  width: 33%;
   max-width: 100%;
   margin: 0;
   border: 2px solid var(--grey);

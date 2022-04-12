@@ -10,21 +10,29 @@
 <body>
   <header> 
 
-    <h1 class="page-title">TASKINATOR</h1>
+    <h1 class="page-title">.taskinator</h1>
     <p> Click button below to add a new task!</p>
-    <button class="btn" id="save-task"> Add Task </button>
+    <form id="task-form">
+      <div class="form-group">
+        <input type="text" name="task-name" placeholder="enter task name"/>
+        <select name="task-type" class="select-dropdown">
+          <option value ="" disabled selected>pick a task type</option>
+          <option value ="print">print</option>
+          <option value="web">web</option>
+          <option value="mobile">mobile</option>
+        </select>
+        <button class="btn" id="save-task" type="submit"> add task </button>
+      </div>
+    </form>
   
   </header>
 
   <main class="page-content"> 
     <section class="task-list-wrapper">
-      <h2 class="list-title"> Tasks to Do: </h2>
       
-      <ul class="task-list" id="tasks-to-do">
-        <li class="task-item">
-          A Task is going to be added soon!
-        </li>
-      </ul>
+      <h2 class="list-title"> Tasks to Do: </h2>
+      <ul class="task-list" id="tasks-to-do"></ul>
+      
     </section>
   </main>
 
